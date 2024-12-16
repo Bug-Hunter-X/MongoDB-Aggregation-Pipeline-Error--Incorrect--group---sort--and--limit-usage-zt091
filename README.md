@@ -1,0 +1,4 @@
+# MongoDB Aggregation Pipeline Bug
+This repository demonstrates a common error in MongoDB aggregation pipelines: incorrect usage of the `$group`, `$sort`, and `$limit` operators.  The initial code leads to unexpected results due to the incorrect ordering and application of these operators.
+
+The `bug.js` file contains the problematic code.  The `bugSolution.js` file provides the corrected implementation.  The bug results from improper sequencing of aggregation stages, which affects the final output.  This is a common mistake for developers unfamiliar with the correct order of operations in MongoDB aggregation.
